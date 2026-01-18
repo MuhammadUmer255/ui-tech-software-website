@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UI Tech - Software Solutions</title>
+   <link rel="stylesheet" href="project css.css" />
+</head>
+
+<body>
+  <header>
+    <h1>UI Tech</h1>
+    <p>Innovating Software Solutions</p>
+  </header>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#tech">Technologies</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <div class="hero-text">Leading the Future of Technology</div>
+  </div>
+
+  <div class="carousel" id="carousel">
+    <button class="carousel-btn left" onclick="moveSlide(-1)">❮</button>
+    <div class="carousel-track" id="carouselTrack">
+      <div class="carousel-slide">
+        <img src="c:\Users\Infinix\OneDrive\Pictures\Screenshots\Screenshot 2025-07-02 230020.png" alt="Project 1" />
+      </div>
+      <div class="carousel-slide">
+        <img src="c:\Users\Infinix\OneDrive\Pictures\Screenshots\Screenshot 2025-07-02 225045.png" alt="Project 2" />
+      </div>
+      <div class="carousel-slide">
+        <img src="c:\Users\Infinix\OneDrive\Pictures\Screenshots\Screenshot 2025-07-02 225407.png" alt="Project 3" />
+      </div>
+    </div>
+    <button class="carousel-btn right" onclick="moveSlide(1)">❯</button>
+  </div>
+
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>Web Applications</h3>
+        <p>Web design and develop software tailored to your business needs.</p>
+        <button onclick="alertService('Web Applications')">Learn More</button>
+      </div>
+      <div class="service-card">
+        <h3>Mobile App Development</h3>
+        <p>Cross-platform mobile apps with outstanding performance and UI.</p>
+        <button onclick="alertService('Mobile App Development')">Learn More</button>
+      </div>
+      <div class="service-card">
+        <h3>Cloud Integration</h3>
+        <p>Seamless integration with leading cloud platforms like AWS, Azure.</p>
+        <button onclick="alertService('Cloud Integration')">Learn More</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="tech" class="section">
+    <h2>Technologies We Use</h2>
+    <ul>
+      <li>React, Angular, Vue.js</li>
+      <li>Node.js, Java, Python</li>
+      <li> html, CSS, Javascript</li>
+      <li>Machine Learning, AI, Blockchain</li>
+      <li>Docker, Kubernetes, CI/CD</li>
+    </ul>
+  </section>
+
+
+  <div class="section" id="contact">
+        <h2>Contact Us</h2>
+        <p>Have a question or want to start a project?</p>
+         <p>Email: contact@uitech.com</p>
+        <p>Phone: +123-456-7890</p>
+        <input type="text" id="email" placeholder="Your email" />
+        <br />
+        <button onclick="sendMessage()">Send Message</button>
+        <p id="responseMsg"></p>
+    </div>
+
+  <footer>
+
+    <script src="project script.js"> </script>
+    <p>&copy; 2025 UI Tech. All rights reserved.</p>
+  </footer>
+ 
+</body>
+</html>
